@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hotel Feedback Dashboard</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+
+    <!-- Sign-Up Form -->
+    <div class="form-container" id="signup-container">
+        <h2>Sign Up</h2>
+        <input type="text" id="signup-username" placeholder="Username">
+        <input type="email" id="signup-email" placeholder="Email">
+        <input type="password" id="signup-password" placeholder="Password">
+        <button onclick="signUp()">Sign Up</button>
+        <p>Already have an account? <a href="#" onclick="toggleForms()">Login here</a></p>
+    </div>
+
+    <!-- Login Form -->
+    <div class="form-container hidden" id="login-container">
+        <h2>Login</h2>
+        <input type="email" id="login-email" placeholder="Email">
+        <input type="password" id="login-password" placeholder="Password">
+        <button onclick="logIn()">Login</button>
+        <p>Don't have an account? <a href="#" onclick="toggleForms()">Sign up here</a></p>
+    </div>
+
+    <!-- Dashboard -->
+    <div id="dashboard" class="form-container hidden">
+        <div class="profile">
+            <img src="https://cdn-icons-png.flaticon.com/512/847/847969.png" alt="User Icon">
+            <div>
+                <span>Welcome,</span>
+                <h3 id="display-username">User</h3>
+            </div>
+        </div>
+
+        <h2>Customer Experience Rating </h2>
+        <div class="bar-container">
+            <div class="bar-row">
+                <span>⭐ 5 Stars</span>
+                <div class="bar" style="--bar-width: 80%;">80</div>
+            </div>
+            <div class="bar-row">
+                <span>⭐ 4 Stars</span>
+                <div class="bar" style="--bar-width: 60%;">60</div>
+            </div>
+            <div class="bar-row">
+                <span>⭐ 3 Stars</span>
+                <div class="bar" style="--bar-width: 40%;">40</div>
+            </div>
+            <div class="bar-row">
+                <span>⭐ 2 Stars</span>
+                <div class="bar" style="--bar-width: 20%;">20</div>
+            </div>
+            <div class="bar-row">
+                <span>⭐ 1 Star</span>
+                <div class="bar" style="--bar-width: 10%;">10</div>
+            </div>
+        </div>
+    </div>
+
+    <script src="scripts/script.js"></script>
+</body>
+</html>

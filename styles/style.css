@@ -1,0 +1,99 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+}
+
+.form-container {
+    background: white;
+    padding: 20px;
+    box-shadow: 0px 0px 10px gray;
+    border-radius: 5px;
+    text-align: center;
+    width: 300px;
+}
+
+input {
+    display: block;
+    width: 90%;
+    margin: 10px auto;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Dashboard Styles */
+#dashboard {
+    width: 400px;
+    background: white;
+    padding: 20px;
+    box-shadow: 0px 0px 10px gray;
+    border-radius: 5px;
+    text-align: left;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.profile img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.profile span {
+    font-size: 14px;
+    color: #555;
+}
+
+.profile h3 {
+    margin: 0;
+    font-size: 20px;
+    color: #333;
+}
+
+.bar-container {
+    margin-top: 20px;
+}
+
+.bar-row {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.bar-row span {
+    width: 80px;
+    font-weight: bold;
+}
+
+.bar {
+    background-color: #007BFF;
+    color: white;
+    padding: 5px;
+    margin-left: 10px;
+    border-radius: 5px;
+    width: var(--bar-width);
+    transition: width 0.5s ease;
+}
